@@ -13,15 +13,30 @@ function createRosterItem(studentName, studentPronouns, studentHS) {
 
 export default function App() {
   let people = [
-    ["Mikkail Allan", "He/His", "Williamsburg Charter Highschool"],
-    ["Justin Apupalo", "He/His", "NYIT"],
-    ["Christopher Bonifacio", "He/His", "Orchard Collegiate Academy"]
+    {
+      firstName: "Eric",
+      lastName: "Salazar",
+      Pronouns: "He/His",
+      School: "Williamsburg Charter Highschool"
+    },
+    {
+      firstName: "Justin",
+      lastName: "Apupalo",
+      Pronouns: "He/His",
+      School: "NYIT"
+    },
+    {
+      firstName: "Chirstopher",
+      lastName: "Bonifacio",
+      Pronouns: "He/His",
+      School: "Orchard Collegiate Academy"
+    }
   ];
 
   let elements = [];
 
   elements = people.map(function (person) {
-    return createRosterItem(person[0], person[1], person[2]);
+    return createRosterItem(person.firstName + " " + person.lastName);
   });
 
   return (
