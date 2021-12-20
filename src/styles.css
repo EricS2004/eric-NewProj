@@ -7,6 +7,10 @@ body {
   font-family: sans-serif;
   text-align: center;
   border: solid 10px black;
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"), url("MYRIADPRO-REGULAR.woff") format("woff");
 }
 .studentRow {
   color: cyan;
